@@ -1,0 +1,131 @@
+\documentclass{article}
+% \usepackage{parskip} %to change paragraph formatting.
+\usepackage{times}
+\usepackage{kantlipsum}
+\usepackage[margin=1in]{geometry} % For equal margin at all sides
+% \usepackage[
+%     top=1in, 
+%     bottom=1in, 
+%     left=0.5cm, 
+%     right=0.5cm]{geometry} %Custom margins on all sides
+
+\title{An Intro To \LaTeX}
+\author{Iftekharul Haque 200042159}
+\date{\today}
+
+\begin{document}
+
+% environments start specific type of formatting like tags on HTML. It starts with \begin{} and ends with \end{}. (ex. \beign{name of the environment}
+% whatever I write here will be compiled in the preview.
+    \begin{titlepage}
+        \maketitle
+    \end{titlepage} 
+
+    \begin{abstract}
+        \kant[2-3]
+    \end{abstract}
+    
+% Dedicated title page environments.
+    \section{Introduction}
+    This is the \emph{introduction} section. Less is more. Write whatever you want. \\
+    
+    Less is \textbf{more}. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write \textit{\textbf{whatever}} you want. Less is more. Write whatever you want. \\
+
+    Less is more. Write whatever you want. \underline{Less is more}. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. \newline
+    Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want. Less is more. Write whatever you want.
+
+    % To align the texts, we can use raggedleft, raggedright, center, flushleft, flushright.
+    
+    % \begin{raggedleft}
+    %     Mr. X\\
+    %     Professor\\
+    %     xyz University\\
+    % \end{raggedleft}
+
+    \begin{flushright}
+        Mr. X\\
+        Professor\\
+        xyz University\\
+    \end{flushright}
+    
+    \subsection{Introduction subsection 1}
+    This is first subsection.
+    \subsubsection{Introduction subsubsection 1}
+    This is first subsubsection.
+    \subsection{Introduction section 2}
+    This is second subsection.
+    \subsubsection{Introduction subsubsection 2}
+    This is second subsubsection.
+
+    \section{Lists in Latex}
+    \subsection{Unordered List}
+    \begin{itemize}
+        \item First Item
+        \item Second Item
+            \begin{itemize}
+                \item nested item 1
+                \begin{itemize}
+                    \item double nested item
+                \end{itemize}
+                \item nested item 2
+                \item nested item 3
+                \begin{itemize}
+                    \item double nested item
+                    \item double nested item
+                    \item double nested item
+                \end{itemize}
+            \end{itemize}
+        \item Third Item
+        \item Forth Item
+        \item Fifth Item
+    \end{itemize}
+
+    \subsection{Ordered List}
+    \begin{enumerate}
+        \item First Item
+        \item Second Item
+            \begin{enumerate}
+                \item nested item 1
+                \begin{enumerate}
+                    \item double nested item
+                \end{enumerate}
+                \item nested item 2
+                \item nested item 3
+                \begin{itemize}
+                    \item double nested item
+                    \item double nested item
+                    \item double nested item
+                \end{itemize}
+            \end{enumerate}
+        \item Third Item
+        \item Forth Item
+        \item Fifth Item
+    \end{enumerate}
+
+    \section{Lipsum}
+    \kant[2-3]
+
+    \section{Font Size}
+    \begin{tiny}
+        This is a tiny text.\\
+    \end{tiny}
+
+    \begin{small}
+        This is a small text.\\
+    \end{small}
+
+    This is a normal text.\\
+    
+    \begin{large}
+        This is a large text.\\
+    \end{large}
+
+    \begin{Large}
+        This is a Large text.\\
+    \end{Large}
+    
+    \begin{Huge}
+        This is a Huge text.\\
+    \end{Huge}
+    
+\end{document}
