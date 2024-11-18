@@ -159,6 +159,6 @@ This is a normal text.
 ## Key Concepts
 - **Environment**: Structures like `\begin{itemize}` and `\end{itemize}` define a specific type of formatting, similar to HTML tags.
 - **Commands**: Predefined commands like `\maketitle`, `\section`, and `\textbf` add specific functionalities or styles to your document.
-```
 
 This Markdown note provides concise explanations and examples for each topic covered in your class, making it perfect for quick revision.
+```
